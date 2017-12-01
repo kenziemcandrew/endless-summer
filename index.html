@@ -7,7 +7,8 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <title>Endless Summer</title>
 </head>
 
@@ -38,34 +39,53 @@
 		</div>
 	</div>
 
-	<div id="bg-hero">
-	</div>	
+	
+	<div class="bg-hero"
+		  data-flickity='{"wrapAround": true }'>
+		  <div class="carousel-cell">
+		  	<img src="img/gallery-photo-1.jpg" alt="">
+		  </div>
+		  <div class="carousel-cell">
+		  	<img src="img/gallery-photo-2.jpg" alt="">
+		  </div>
+		  <div class="carousel-cell">
+		  	<img src="img/gallery-photo-3.jpg" alt="">
+		  </div>
+		  <div class="carousel-cell">
+		  	<img src="img/gallery-photo-4.jpg" alt="">
+		  </div>
+		  <div class="carousel-cell">
+		  	<img src="img/gallery-photo-5.jpg" alt="">
+		  </div>
+	</div>
 
 	<div id="bg-color">
 		<div class="wrapper row">
-			<div class="col-1-3">
-				<h3>5 day deluxe package</h3>
-				<p>This course is suited for all ages and abilities and is one of our most popular packages.</p>
-			</div>
+			
 			<div class="col-1-2" id="mission">
 				<p>Endless Summer’s mission is to cultivate a love and respect for the ocean by building confidence, developing character and inspiring stoke through safety, fun and learning.</p>
 
 				<form>
 					<h2>subscribe to our newsletter</h2>
-					<label for="email"></label>
+					<label for="email">Email</label>
 					<input placeholder="Email">
 					<p><a href="#submit" class="btn">Submit</a></p>
 				</form>
 			</div>
+
+			<div class="col-lg-1-3">
+				<h3>5 day deluxe package</h3>
+				<p>This course is suited for all ages and abilities and is one of our most popular packages.</p>
+			</div>
 		</div>
 	</div>
 
-</header>
 
 
 
-<section class="wrapper">
-	<div class="row">
+
+
+	<div class="row wrapper">
 		
 		<header class="col-1-2">
 			<h2>Our Services</h2>
@@ -80,36 +100,37 @@
 		   <p>You will receive Half price dinner voucher and complimentary drink at local restaurant for each lesson.</p>
     	</header>
 
-    <section class="col-1-2">
-    	
-    	<div class="row">
-    		<div class="push-left">
-	    		<p>$320</p>
-	    	</div>
-	    	<div class="push-right">
-	    		<p>4 x 4 hour surf safari</p>
-	    		<p>1 x 2.5 hour private lesson</p>
-	    	</div>
-	    </div>
+	    <section class="col-1-2">
+	    	
+	    	<div class="row">
+	    		<div class="col-1-4">
+		    		<p>$320</p>
+		    	</div>
+		    	<div class="col-1-3 push-right">
+		    		<p>4 x 4 hour surf safari</p>
+		    		<p>1 x 2.5 hour private lesson</p>
+		    	</div>
+		    </div>
 
-    		<div class="center-block">
-	    		<header>
-	    			<h3>5 Day Deluxe Package</h3>
-	    		</header>
+	    		<div class="center-block">
+		    		<header>
+		    			<h3>5 Day Deluxe Package</h3>
+		    		</header>
 
-	    		<p>We will aim to experiment with riding different surfboards and possibly introducing more maneuverable hardboards.</p>
+		    		<p>We will aim to experiment with riding different surfboards and possibly introducing more maneuverable hardboards.</p>
 
-	    		<p><a href="#book" class="btn">book now</a></p>
-    		</div>
+		    		<p><a href="#book" class="btn">book now</a></p>
+	    		</div>
 
-	</section>
-</div>
+			</section>
+		</div>
+</header>
 
 <div class="wrapper row center-block">
 	<section class="col-1-4">
 			<header>
 				<p>$65</p>
-				<h5>1/2 learn to surf adventure</h5>
+				<h3>1/2 learn to surf adventure</h3>
 			</header>
 			<p>The first lesson is a complete introduction to surfing so whether you have never surfed before or want a refresher course we will tailor the experience specifically for you.</p>
 			<p><a href="#book">book now</a></p>
@@ -118,7 +139,7 @@
 	<section class="col-1-4">
 			<header>
 				<p>$115</p>
-				<h5>2 day progressive lesson</h5>
+				<h3>2 day progressive lesson</h3>
 			</header>
 			<p>The two day course is a natural continuation from your first surf lesson and we aim to improve stance, pop up technique and introduce paddling.</p>
 			<p><a href="#book" class="btn">book now</a></p>
@@ -127,7 +148,7 @@
 	<section class="col-1-4">
 			<header>
 				<p>$155</p>
-				<h5>3 day ultimate wave rider</h5>
+				<h3>3 day ultimate wave rider</h3>
 			</header>
 			<p>The three day course is a really fun technical course as we get lots of time to show you a wide range of techniques and you get lots of water time to perfect your new skills.</p>
 			<p><a href="#book" class="btn">book now</a></p>
@@ -136,7 +157,7 @@
 	<section class="col-1-4">
 			<header>
 				<p>$185</p>
-				<h5>4 day epic surf experience</h5>
+				<h3>4 day epic surf experience</h3>
 			</header>
 			<p>When you are confident at turning your board both ways we introduce S-turns (This is doing multiple turns on one wave) and surfing with Flow!</p>
 			<p><a href="#book" class="btn">book now</a></p>
@@ -145,47 +166,44 @@
 
 
 
-<div class="bg-color">
-	<div class="wrapper row">
+<div class="wrapper row">
+	<div class="bg-color">
 		<div class="col-1-2 push-right center-block">
 			<p>“8 Awesome Ways to Prepare for a Surf Trip”</p>
 			<p><a href=http://www.theinertia.com/surf/8-awesome-ways-to-prepare-for-a-surf-trip target="_blank">book now</a></p>
 		</div>
-	</section>
+	</div>
 </div>
 
 
 <div class="wrapper row" id="instructors">
 	<div class="col-1-2">
-		<div class="row center-block">
-			<section class="col-1-3">
+		<div class="row center-block flex">
+			<section class="col-sm-1-3">
 				<img src="img/accreditation-icon.png" alt="">
 				<p>Surfing New Zealand coaching accreditation</p>
 			</section>
 
-			<section class="col-1-3">
+			<section class="col-sm-1-3">
 				<img src="img/lifeguard-icon.png" alt="">
 				<p>APOLA Beach lifeguard certification</p>
 			</section>
 
-			<section class="col-1-3">
+			<section class="col-sm-1-3">
 				<img src="img/experience-icon.png" alt="">
 				<p>15+ years personal surfing experience</p>
 			</section>
-		</div>
-
-		<div class="row center-block">
-			<section class="col-1-3">
+			<section class="col-sm-1-3">
 				<img src="img/surfboards-icon.png" alt="">
 				<p>Over 80 fun safe soft surfboards </p>
 			</section>
 
-			<section class="col-1-3">
+			<section class="col-sm-1-3">
 				<img src="img/local-icon.png" alt="">
 				<p>Vast knowledge of the local area</p>
 			</section>
 
-			<section class="col-1-3">
+			<section class="col-sm-1-3">
 				<img src="img/coaching-icon.png" alt="">
 				<p>Minimum of 10 years coaching background</p>
 			</section>
@@ -193,7 +211,7 @@
 	</div>
 
 
-	<div class="col-1-2">
+	<div class="col-1-2" id="instructors">
 		<img src="img/instructor-image.jpg" alt="">
 	</div>
 </div>
@@ -203,8 +221,8 @@
 
 
 		<!-- INTERACTIVE MAP -->
-<div class="bg-color">
-	<div class="wrapper row">
+<div class="wrapper row">
+	<div class="bg-color">
 		<div class="col-1-2">
 			<div id="map">
 			</div>
@@ -230,7 +248,7 @@
 			   <input placeholder="subject"> 
 
 			<label for="message"></label>
-			  <textarea placeholder="message" cols="80" rows="6"></textarea>
+			  <textarea placeholder="message"></textarea>
 
 			<p><a href="#submit" class="btn">Submit</a></p>
 
@@ -276,14 +294,8 @@
 	      google.maps.event.addDomListener(window, 'load', initialize);
 	    </script>
 
-<script src="/path/to/flickity.pkgd.min.js"></script>
-	<script>
-		$('.main-gallery').flickity({
-		  // options
-		  cellAlign: 'left',
-		  contain: true
-		});
-	</script>
+
+	
 
 
 </html>
