@@ -9,33 +9,36 @@
 <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <title>Endless Summer</title>
 </head>
 
 <body>
 
 <header>
-	<div class="wrapper row">
+	<div class="bg-blue">
+		<div class="wrapper row">
 
-  		<div class="col-1-5">
-        	<h1><a href="#home"><img src="img/logo.png" alt="endless summer"></a></h1>
-	    </div>
-	        
+	  		<div class="col-1-5">
+	        	<h1><a href="#home"><img src="img/logo.png" alt="endless summer"></a></h1>
+		    </div>
+		        
 
-		<nav class="col-3-4 push-right">
-	         <ul>
-	            <li><a href="#home">Services</a></li>
-	            <li><a href="#about">Instructors</a></li>
-	            <li><a href="#work">Contact</a></li>
-	        </ul>
-   	   	
-   		</nav>
+			<nav class="col-3-4 push-right">
+		         <ul>
+		            <li><a href="#services">Services</a></li>
+		            <li><a href="#instructors">Instructors</a></li>
+		            <li><a href="#contact">Contact</a></li>
+		        </ul>
+	   	   	
+	   		</nav>
 
-   		<div class="col-1-5">
-	   		<ul>
-				<li><a href="https://www.facebook.com" target="_blank"></a></li>
-				<li><a href="https://www.instagram.com" target="_blank"></a></li>
-			</ul>
+	   		<div class="col-1-5">
+		   		<ul>
+					<li><a href="https://www.facebook.com" target="_blank"></a></li>
+					<li><a href="https://www.instagram.com" target="_blank"></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
@@ -59,7 +62,7 @@
 		  </div>
 	</div>
 
-	<div id="bg-color">
+	<div class="bg-hero">
 		<div class="wrapper row">
 			
 			<div class="col-1-2" id="mission">
@@ -68,12 +71,14 @@
 				<form>
 					<h2>subscribe to our newsletter</h2>
 					<label for="email">Email</label>
-					<input placeholder="Email">
+					<input placeholder="Email" type="email">
+					<div class="push-right">
 					<p><a href="#submit" class="btn">Submit</a></p>
+				</div>
 				</form>
 			</div>
 
-			<div class="col-lg-1-3">
+			<div class="col-2-5" id="hero">
 				<h3>5 day deluxe package</h3>
 				<p>This course is suited for all ages and abilities and is one of our most popular packages.</p>
 			</div>
@@ -81,96 +86,101 @@
 	</div>
 
 
-
-
-
-
-	<div class="row wrapper">
-		
-		<header class="col-1-2">
-			<h2>Our Services</h2>
-	
-			<ul>
-		        <li>All equipment is included with each lesson</li>
-		        <li>We provide O’Neill wetsuits in the winter months</li>
-		        <li>With each lesson we cover Ocean safety</li>
-		        <li>Intermediate to advanced boards available</li>
-		    </ul>
-
-		   <p>You will receive Half price dinner voucher and complimentary drink at local restaurant for each lesson.</p>
-    	</header>
-
-	    <section class="col-1-2">
-	    	
-	    	<div class="row">
-	    		<div class="col-1-4">
-		    		<p>$320</p>
-		    	</div>
-		    	<div class="col-1-3 push-right">
-		    		<p>4 x 4 hour surf safari</p>
-		    		<p>1 x 2.5 hour private lesson</p>
-		    	</div>
-		    </div>
-
-	    		<div class="center-block">
-		    		<header>
-		    			<h3>5 Day Deluxe Package</h3>
-		    		</header>
-
-		    		<p>We will aim to experiment with riding different surfboards and possibly introducing more maneuverable hardboards.</p>
-
-		    		<p><a href="#book" class="btn">book now</a></p>
-	    		</div>
-
-			</section>
-		</div>
 </header>
 
-<div class="wrapper row center-block">
-	<section class="col-1-4">
-			<header>
-				<p>$65</p>
-				<h3>1/2 learn to surf adventure</h3>
-			</header>
-			<p>The first lesson is a complete introduction to surfing so whether you have never surfed before or want a refresher course we will tailor the experience specifically for you.</p>
-			<p><a href="#book">book now</a></p>
-	</section>
-
-	<section class="col-1-4">
-			<header>
-				<p>$115</p>
-				<h3>2 day progressive lesson</h3>
-			</header>
-			<p>The two day course is a natural continuation from your first surf lesson and we aim to improve stance, pop up technique and introduce paddling.</p>
-			<p><a href="#book" class="btn">book now</a></p>
-	</section>
-
-	<section class="col-1-4">
-			<header>
-				<p>$155</p>
-				<h3>3 day ultimate wave rider</h3>
-			</header>
-			<p>The three day course is a really fun technical course as we get lots of time to show you a wide range of techniques and you get lots of water time to perfect your new skills.</p>
-			<p><a href="#book" class="btn">book now</a></p>
-	</section>
-
-	<section class="col-1-4">
-			<header>
-				<p>$185</p>
-				<h3>4 day epic surf experience</h3>
-			</header>
-			<p>When you are confident at turning your board both ways we introduce S-turns (This is doing multiple turns on one wave) and surfing with Flow!</p>
-			<p><a href="#book" class="btn">book now</a></p>
-	</section>
-</div>
 
 
+<section class="wrapper" id="services">	
+		<div class="row">	
+			<header class="col-1-2">
+				<h2>Our Services</h2>
+		
+				<ul>
+			        <li>All equipment is included with each lesson</li>
+			        <li>We provide O’Neill wetsuits in the winter months</li>
+			        <li>With each lesson we cover Ocean safety</li>
+			        <li>Intermediate to advanced boards available</li>
+			    </ul>
 
-<div class="wrapper row">
-	<div class="bg-color">
-		<div class="col-1-2 push-right center-block">
+			   <p>You will receive Half price dinner voucher and complimentary drink at local restaurant for each lesson.</p>
+	    	</header>
+
+		    <section class="col-1-2" id="package-5">
+		    	<div class="row">
+		    		<div class="col-1-4">
+			    		<p>$320</p>
+			    	</div>
+			    	<div class="col-3-4">
+			    		<p>4 x 4 hour surf safari</p>
+			    		<p>1 x 2.5 hour private lesson</p>
+			    	</div>
+			    </div>
+
+		    		<div class="txt-center">
+			    		<header>
+			    			<h3>5 Day <br>Deluxe Package</h3>
+			    		</header>
+
+			    		<p>We will aim to experiment with riding different surfboards and possibly introducing more maneuverable hardboards.</p>
+
+			    		<p><a href="#book" class="btn">book now</a></p>
+		    		</div>		
+			</section>
+		</div>
+
+		<div class="flex-services txt-center row">
+				<section class="col-1-4">
+					<div id="package-1">
+						<header>
+							<p>$65</p>
+							<h3>1/2 day learn <br>to surf adventure</h3>
+						</header>
+						<p>The first lesson is a complete introduction to surfing so whether you have never surfed before or want a refresher course we will tailor the experience specifically for you.</p>
+						<p><a href="#book">book now</a></p>
+					</div>
+				</section>
+
+				<section class="col-1-4">
+					<div id="package-2">
+						<header>
+							<p>$115</p>
+							<h3>2 day <br>progressive lesson</h3>
+						</header>
+						<p>The two day course is a natural continuation from your first surf lesson and we aim to improve stance, pop up technique and introduce paddling.</p>
+						<p><a href="#book" class="btn">book now</a></p>
+					</div>
+				</section>
+
+				<section class="col-1-4">
+					<div id="package-3">
+						<header>
+							<p>$155</p>
+							<h3>3 day <br>ultimate wave rider</h3>
+						</header>
+						<p>The three day course is a really fun technical course as we get lots of time to show you a wide range of techniques and you get lots of water time to perfect your new skills.</p>
+						<p><a href="#book" class="btn">book now</a></p>
+					</div>
+				</section>
+
+				<section class="col-1-4">
+					<div id="package-4">
+						<header>
+							<p>$185</p>
+							<h3>4 day <br>epic surf experience</h3>
+						</header>
+						<p>When you are confident at turning your board both ways we introduce S-turns (This is doing multiple turns on one wave) and surfing with Flow!</p>
+						<p><a href="#book" class="btn">book now</a></p>
+					</div>
+				</section>
+			</div>
+		</div>		
+</section>
+
+<div class="bg-blue" id="article">
+	<div class="wrapper row">
+		<div class="col-1-2 push-right txt-center">
 			<p>“8 Awesome Ways to Prepare for a Surf Trip”</p>
-			<p><a href=http://www.theinertia.com/surf/8-awesome-ways-to-prepare-for-a-surf-trip target="_blank">book now</a></p>
+			<p><a href=http://www.theinertia.com/surf/8-awesome-ways-to-prepare-for-a-surf-trip target="_blank">read more</a></p>
 		</div>
 	</div>
 </div>
@@ -178,40 +188,40 @@
 
 <div class="wrapper row" id="instructors">
 	<div class="col-1-2">
-		<div class="row center-block flex">
+		<div class="row txt-center flex">
 			<section class="col-sm-1-3">
-				<img src="img/accreditation-icon.png" alt="">
+				<img src="img/icon-accreditation.png" alt="">
 				<p>Surfing New Zealand coaching accreditation</p>
 			</section>
 
 			<section class="col-sm-1-3">
-				<img src="img/lifeguard-icon.png" alt="">
+				<img src="img/icon-lifeguard.png" alt="">
 				<p>APOLA Beach lifeguard certification</p>
 			</section>
 
 			<section class="col-sm-1-3">
-				<img src="img/experience-icon.png" alt="">
+				<img src="img/icon-experience.png" alt="">
 				<p>15+ years personal surfing experience</p>
 			</section>
 			<section class="col-sm-1-3">
-				<img src="img/surfboards-icon.png" alt="">
+				<img src="img/icon-surfboard.png" alt="">
 				<p>Over 80 fun safe soft surfboards </p>
 			</section>
 
 			<section class="col-sm-1-3">
-				<img src="img/local-icon.png" alt="">
+				<img src="img/icon-local.png" alt="">
 				<p>Vast knowledge of the local area</p>
 			</section>
 
 			<section class="col-sm-1-3">
-				<img src="img/coaching-icon.png" alt="">
+				<img src="img/icon-coaching.png" alt="">
 				<p>Minimum of 10 years coaching background</p>
 			</section>
 		</div>
 	</div>
 
 
-	<div class="col-1-2" id="instructors">
+	<div class="col-1-2">
 		<img src="img/instructor-image.jpg" alt="">
 	</div>
 </div>
@@ -222,62 +232,61 @@
 
 		<!-- INTERACTIVE MAP -->
 <div class="wrapper row">
-	<div class="bg-color">
+	<div id="contact">
+	
 		<div class="col-1-2">
 			<div id="map">
 			</div>
 		</div>
-	 
-
-
-
-
-
+	
 
 		<form class="col-1-2">
 		
-		    <label for="first-name"></label>
-		        <input placeholder="first name">
+		    <label for="first-name">First Name</label>
+		        <input placeholder="first name" type="f-name">
 		        
 		  
-		    <label for="email"></label>
-					<input placeholder="Email">  
+		    <label for="email">Email</label>
+				<input placeholder="Email" type="email">  
 		     
 
-			<label for="subject"></label>
-			   <input placeholder="subject"> 
+			<label for="subject">Subject</label>
+			   <input placeholder="subject" type="subject"> 
 
-			<label for="message"></label>
-			  <textarea placeholder="message"></textarea>
+			<label for="message">Message</label>
+			  <textarea placeholder="message" cols="80" rows="6" type="message"></textarea>
 
-			<p><a href="#submit" class="btn">Submit</a></p>
+			<p class="push-right"><a href="#submit" class="btn">Submit</a></p>
 
 		
 		</form>
+	</div>
 </div>
 
-<footer class="wrapper row">
-	<div class="col-1-2">
-		<p><a href="tel:6478257873">+64 7-825 7873</a></p>
-		<p><a href="https://www.google.com/maps">6041 Old York Road Dekalb, IL 60115</a></p>
-	</div>
 
-	<ul>
-		<li><a href="https://www.facebook.com" target="_blank"></a></li>
-		<li><a href="https://www.instagram.com" target="_blank"></a></li>
-	</ul>
+<div class="bg-blue">
+	<footer class="wrapper row">
+		<address class="col-1-2">
+			<p><a href="tel:6478257873">+64 7-825 7873</a></p>
+			<p><a href="https://www.google.com/maps">6041 Old York Road Dekalb, IL 60115</a></p>
+		</address>
 
-
-</section>
-
+		<ul>
+			<li><a href="https://www.facebook.com" target="_blank"></a></li>
+			<li><a href="https://www.instagram.com" target="_blank"></a></li>
+		</ul>
 
 
+	</footer>
+
+</div>
 
 
 
 
 
-</body>
+
+
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -294,7 +303,7 @@
 	      google.maps.event.addDomListener(window, 'load', initialize);
 	    </script>
 
-
+</body>
 	
 
 
